@@ -4,55 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Biomolecules Online Test</title>
+
 <style>
-body{font-family:Arial;background:#f3f6fb;margin:0;padding:20px}
-.box{max-width:700px;margin:auto;background:white;padding:22px;border-radius:15px;box-shadow:0 3px 15px #bbb}
-h1{text-align:center;color:#174a8b}
-input{width:100%;padding:12px;box-sizing:border-box;border:1px solid #bbb;border-radius:8px;margin:10px 0 20px;font-size:16px}
-.question{font-size:19px;font-weight:bold;margin:20px 0 12px}
-.option{display:block;background:#f1f4f8;padding:12px;margin:8px 0;border-radius:8px}
-button{background:#1769aa;color:white;border:0;padding:13px 25px;border-radius:8px;font-size:16px;margin-top:15px}
-#test,#result{display:none}
-.correct{color:green;font-weight:bold}
-.incorrect{color:red;font-weight:bold}
-</style>
-</head>
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f6fb;
+    margin: 0;
+    padding: 20px;
+}
 
-<body>
-<div class="box">
-<h1>Biomolecules Online Test</h1>
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
 
-<div id="start">
-<p><b>Enter Student Name:</b></p>
-<input id="studentName" placeholder="Student Name">
-<button onclick="startTest()">Start Test</button>
-</div>
+h1 {
+    text-align: center;
+    color: #1769aa;
+}
 
-<div id="test">
-<div id="questions"></div>
-<button onclick="submitTest()">Submit Test</button>
-</div>
+h2 {
+    color: #222;
+}
 
-<div id="result"></div>
-</div>
-
-<script>
-const questions = [
-["Which of the following is a carbohydrate?",["Protein","Glucose","Lipid","DNA"],1],
-["The basic unit of carbohydrates is:",["Amino acid","Nucleotide","Monosaccharide","Fatty acid"],2],
-["Glucose is a:",["Monosaccharide","Disaccharide","Polysaccharide","Protein"],0],
-["Sucrose is made up of:",["Glucose + Fructose","Glucose + Glucose","Fructose + Galactose","Ribose + Glucose"],0],
-["Starch is a:",["Monosaccharide","Disaccharide","Polysaccharide","Protein"],2],
-["Proteins are made up of:",["Fatty acids","Amino acids","Nucleotides","Glucose"],1],
-["The bond between amino acids is called:",["Glycosidic bond","Peptide bond","Ester bond","Ionic bond"],1],
-["Which biomolecule is mainly used for long-term energy storage?",["Carbohydrates","Lipids","Proteins","Nucleic acids"],1],
-["A triglyceride consists of:",["Glycerol and fatty acids","Amino acids","Glucose molecules","Nucleotides"],0],
-["The main component of plant cell walls is:",["Glycogen","Cellulose","Cholesterol","Protein"],1],
-["DNA and RNA are:",["Proteins","Lipids","Nucleic acids","Carbohydrates"],2],
-["The basic unit of nucleic acids is:",["Amino acid","Nucleotide","Fatty acid","Monosaccharide"],1],
-["DNA stands for:",["Deoxyribonucleic acid","Dicarboxylic nucleic acid","Double nucleic acid","Deoxygenated ribose acid"],0],
-["Which base is found in RNA instead of thymine?",["Adenine","Uracil","Cytosine","Guanine"],1],
-["Most enzymes are:",["Proteins","Lipids","Carbohydrates","Minerals"],0],
-["Which biomolecule provides quick energy?",["Carbohydrates","Lipids","DNA","Proteins"],0],
-["Glycogen is mainly the storage carbohydrate of:",["Animals","Plants","Viruses","Minerals"],0],
-["Which lipid is an important
+input {
+    width: 
